@@ -1,1 +1,47 @@
-<h1>Hello This is My Web App</h1>
+<div class="jumbotron">
+	<h1 class="display-4">{{ stock.companyName }} - {{ stock.symbol }}</h1>
+
+	<table>
+		<tr>
+			<th>Latest Price</th>
+			<th></th>
+			<td> ${{ stock.latestPrice }}</td>
+		</tr>
+
+		<tr>
+			<th>Previous Close</th>
+			<th></th>
+			<td> ${{ stock.previousClose }}</td>
+		</tr>
+
+		<tr>
+			<th>Percent Change</th>
+			<th></th>
+			<td> {{ stock.changePercent }}</td>
+		</tr>
+
+		<tr>
+			<th>Market Cap</th>
+			<th></th>
+			<td> ${{ stock.marketCap }}</td>
+		</tr>
+
+		<tr>
+			<th>YTD Change</th>
+			<th></th>
+			<td> {{ stock.ytdChange }}</td>
+		</tr>
+
+		<tr>
+			<th>52W High</th>
+			<th></th>
+			<td> {{ stock.week52High }}</td>
+		</tr>
+
+		<tr>
+			<th>52W Low</th>
+			<th></th>
+			<td> {{ stock.week52Low }}</td>
+		</tr>
+	</table>
+</div>
